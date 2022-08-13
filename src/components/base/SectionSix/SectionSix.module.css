@@ -32,11 +32,11 @@
 }
 
 .Section_Six__bank p:first-child {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 .Section_Six__bank p:nth-child(2) {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -67,7 +67,7 @@
 @media screen and (max-height: 1023px) {
   .Section_Six__content {
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     row-gap: 0.5rem;
   }
   .Section_Six__Gift {

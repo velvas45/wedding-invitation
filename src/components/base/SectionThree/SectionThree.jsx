@@ -9,10 +9,10 @@ function SectionThree() {
     <section className={styles.section_three}>
       <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
       <div className={styles.section_three__content}>
-        <p className={styles.section_three__content_title}>The Bride</p>
+        <p className={styles.section_three__content_title}>The Groom</p>
         <CardDescription
           titleName="Helmi Agustiawan Dwi Putra Adi, S.Kom"
-          contentValue="Putri Tunggal dari :"
+          contentValue="Putra Tunggal dari :"
           fatherName="Eddy Joewono"
           motherName="Rohmiati"
           urlInstagram="https://www.instagram.com/helmi_agustiawan/"

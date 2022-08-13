@@ -26,18 +26,18 @@ function App() {
 
   return (
     <>
-      {/* {visibleModal && (
+      {visibleModal && (
         <Modal
           isVisible={visibleModal}
           btnClick={closeModal}
           invitationTitle={invitationToUser}
         />
-        )} */}
-      <Modal
+      )}
+      {/* <Modal
         isVisible={visibleModal}
         btnClick={closeModal}
         invitationTitle={invitationToUser}
-      />
+      /> */}
       {!visibleModal && (
         <div className="container">
           <SectionOne />
