@@ -1,0 +1,43 @@
+.ButtonCustom {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: transparent;
+  border: 1px solid #000;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 50px;
+  line-height: 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Assistant", sans-serif;
+}
+
+.ButtonCustom[data-button="primary"] {
+  background-color: #000;
+  color: #fff;
+}
+.ButtonCustom[data-button="secondary"] {
+  background-color: rgba(65, 65, 65, 0.7);
+  box-shadow: 0px 3px 4px rgba(122, 122, 122, 0.2);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .ButtonCustom {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 1023px) {
+  .ButtonCustom {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ButtonCustom {
+    font-size: 18px;
+  }
+}

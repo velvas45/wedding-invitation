@@ -1,0 +1,301 @@
+.Section_Four {
+  background: url("/public/assets/img/WeddingWebsite/1.4/Background-1.4-Mobile.png")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Section_Four__Card {
+  filter: drop-shadow(-6px 6px 5px rgba(0, 0, 0, 0.3));
+  border: 15px solid rgba(192, 192, 192, 0.25);
+  border-radius: 5000px 5000px 450px 450px;
+  width: 90%;
+  /* height: 580px; */
+  height: 657px;
+  position: absolute;
+  bottom: 5%;
+}
+
+.Section_Four__InnerCard {
+  text-align: center;
+  border-radius: 5000px 5000px 450px 450px;
+  border: 1px solid #c0c0c0;
+  padding: 3.2rem 2rem 2rem;
+  /* padding: 2rem; */
+  background: url("/public/assets/img/WeddingWebsite/1.4/img/Img1.4/mobile-version.png")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Section_Four__CardTitle {
+  margin-bottom: 50px;
+  /* margin-bottom: 30px; */
+}
+
+.Section_Four__CardTitle h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.Section_Four__CardTitle h4 {
+  font-family: "Alex Brush", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  transform: translate(-10px, -15px) rotateZ(-8deg);
+}
+
+.Section_Four__CardContent {
+  text-align: left;
+}
+
+.Section_Four__CardContentAkad {
+  margin-bottom: 40px;
+  /* margin-bottom: 30px; */
+}
+
+.Section_Four__CardContentAkad p:first-child,
+.Section_Four__CardContentResepsi p:first-child,
+.Section_Four__CardContentAkad p:nth-child(3),
+.Section_Four__CardContentResepsi p:nth-child(3) {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Section_Four__CardContentAkad p:nth-child(2),
+.Section_Four__CardContentResepsi p:nth-child(2) {
+  font-weight: 700;
+  font-size: 16px;
+  color: #212121;
+  width: 73%;
+  margin: 4px 0;
+}
+
+.Section_Four__CardBtn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.Section_Four__CardBtn a {
+  width: 100%;
+}
+
+@media screen and (min-height: 634px) {
+  .Section_Four__Card {
+    height: 420px;
+    bottom: 2%;
+  }
+  .Section_Four__InnerCard {
+    padding: 2rem;
+  }
+  .Section_Four__CardTitle {
+    margin-bottom: 0;
+  }
+
+  .Section_Four__CardContentAkad {
+    margin-bottom: 8px;
+  }
+
+  .Section_Four__CardContentAkad p:first-child,
+  .Section_Four__CardContentResepsi p:first-child,
+  .Section_Four__CardContentAkad p:nth-child(3),
+  .Section_Four__CardContentResepsi p:nth-child(3) {
+    font-size: 13px;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .Section_Four__CardBtn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .Section_Four__Card {
+    height: 500px;
+    bottom: 5%;
+  }
+  .Section_Four__InnerCard {
+    padding: 2rem;
+  }
+  .Section_Four__CardTitle {
+    margin-bottom: 0;
+  }
+
+  .Section_Four__CardContentAkad {
+    margin-bottom: 8px;
+  }
+
+  .Section_Four__CardContentAkad p:first-child,
+  .Section_Four__CardContentResepsi p:first-child,
+  .Section_Four__CardContentAkad p:nth-child(3),
+  .Section_Four__CardContentResepsi p:nth-child(3) {
+    font-size: 13px;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .Section_Four__CardBtn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .Section_Four__Card {
+    height: 696px;
+  }
+  .Section_Four__InnerCard {
+    background: url("/public/assets/img/WeddingWebsite/1.4/img/Img1.4/2.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 3.2rem 4rem 2rem;
+  }
+  .Section_Four__CardTitle h3 {
+    font-size: 30px;
+  }
+
+  .Section_Four__CardTitle h4 {
+    font-size: 40px;
+    transform: translate(-10px, -20px) rotateZ(-8deg);
+  }
+
+  .Section_Four__CardContentAkad {
+    margin-bottom: 30px;
+  }
+
+  .Section_Four__CardContentAkad p:first-child,
+  .Section_Four__CardContentResepsi p:first-child,
+  .Section_Four__CardContentAkad p:nth-child(3),
+  .Section_Four__CardContentResepsi p:nth-child(3) {
+    font-size: 18px;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    font-size: 20px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 1023px) {
+  .Section_Four__Card {
+    height: 400px;
+    bottom: 1%;
+  }
+
+  .Section_Four__InnerCard {
+    padding: 2rem 6rem;
+  }
+
+  .Section_Four__CardBtn {
+    margin-top: 30px;
+  }
+}
+
+/* Responsive web design for width > 1024 and height > 1024 */
+@media screen and (min-width: 1024px) and (min-height: 1024px) {
+  .Section_Four__Card {
+    border-radius: 20px;
+  }
+
+  .Section_Four__InnerCard {
+    border-radius: 20px;
+    padding: 3.2rem 10rem;
+    background: url("/public/assets/img/WeddingWebsite/1.4/img/Img1.4/Mask\ group.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-height: 1023px) {
+  .Section_Four__Card {
+    border-radius: 5px;
+  }
+
+  .Section_Four__InnerCard {
+    border-radius: 0px;
+    padding: 3.2rem 10rem;
+    background: url("/public/assets/img/WeddingWebsite/1.4/img/Img1.4/Mask\ group.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 1024px) {
+  .Section_Four__Card {
+    border-radius: 20px;
+  }
+
+  .Section_Four__InnerCard {
+    padding: 3.2rem 22rem;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1023px) {
+  .Section_Four__Card {
+    border-radius: 20px;
+    height: 480px;
+  }
+
+  .Section_Four__InnerCard {
+    padding: 3.2rem 22rem;
+    border-radius: 20px;
+    background: url("/public/assets/img/WeddingWebsite/1.4/img/Img1.4/Mask\ group.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .Section_Four__CardContentAkad p:nth-child(2),
+  .Section_Four__CardContentResepsi p:nth-child(2) {
+    width: 40%;
+  }
+}

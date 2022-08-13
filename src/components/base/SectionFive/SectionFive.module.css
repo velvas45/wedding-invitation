@@ -1,0 +1,150 @@
+.Section_Five {
+  background: url("/public/assets/img/WeddingWebsite/1.5/Background-1.5-Mobile.png")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Section_Five__title {
+  margin: 30px 0 50px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #202020;
+  position: relative;
+}
+
+.Section_Five__title::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #fff;
+  animation: textFill 8s linear infinite;
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+}
+
+.Section_Five__mainContent {
+  /* background: white; */
+  width: 100%;
+  overflow-y: auto;
+}
+
+.Section_Five__mainContent::-webkit-scrollbar {
+  display: none;
+}
+
+.Section_Five__video {
+  margin-bottom: 2rem;
+}
+
+@keyframes textFill {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 1023px) {
+  .Section_Five__title {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Section_Five {
+    background: url("/public/assets/img/WeddingWebsite/1.5/Background-1.5-Tablet.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 1023px) {
+  .Section_Five__video {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .Section_Five__title {
+    font-size: 30px;
+    margin: 32px 0;
+  }
+
+  .Section_Five__mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .Section_Five__video {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .Section_Five__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Section_Five {
+    background: url("/public/assets/img/WeddingWebsite/1.5/Background-1.5-Desktop.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1024px) {
+  .Section_Five__mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .Section_Five__video {
+    width: 100%;
+    margin-bottom: unset;
+    /* max-height: 350px; */
+  }
+}
+@media screen and (min-width: 1024px) and (max-height: 1023px) {
+  .Section_Five__mainContent {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .Section_Five__video {
+    width: 600px;
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Section_Five__title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}

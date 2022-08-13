@@ -1,0 +1,39 @@
+.card__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 50px;
+  height: 54px;
+  /* padding: 20px 15px 8px; */
+  padding: 10px;
+}
+
+.card__time_time {
+  font-size: 14px;
+}
+
+.card__time_timeName {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .card__time {
+    width: 83px;
+    height: 100px;
+    padding: 20px 10px;
+  }
+
+  .card__time_time {
+    font-size: 26px;
+  }
+
+  .card__time_timeName {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1024px) {
+}

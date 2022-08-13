@@ -1,0 +1,180 @@
+.Modal {
+  background: url("/public/assets/img/WeddingWebsite/1.0/Background-1.0-Mobile.png")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 50px 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s; */
+  /* justify-content: center; */
+  color: #fff;
+}
+
+.Modal_hide {
+  display: none;
+}
+
+.Modal__title {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Alex Brush", sans-serif;
+  font-size: 50px;
+}
+
+.Modal__title p:first-child {
+  transform: translateX(-50%);
+}
+.Modal__title p:last-child {
+  transform: translateX(50%);
+}
+
+.Date {
+  font-size: 30px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-top: 16px;
+}
+
+.Modal__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.Modal__footer p {
+  width: max-content;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3e3e3e;
+  position: relative;
+}
+
+.Modal__footer p::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  /* width: 100px; */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #fff;
+  animation: textFill 8s linear infinite;
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+}
+
+.Modal__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  color: #fff;
+  background: #3e3e3e;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  padding: 15px 17px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.Modal__button span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@keyframes textFill {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Modal {
+    background: url("/public/assets/img/WeddingWebsite/1.0/Background-1.0-Tablet.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Modal {
+    background: url("/public/assets/img/WeddingWebsite/1.0/Background-1.0-Desktop.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

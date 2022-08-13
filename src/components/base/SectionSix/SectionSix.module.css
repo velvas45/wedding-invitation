@@ -1,0 +1,114 @@
+.Section_Six {
+  background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Mobile.png")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Section_Six__content {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.Section_Six__bank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.2rem;
+}
+
+.Section_Six__bank p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+.Section_Six__bank p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Section_Six__content span,
+.Section_Six__Gift p:first-child {
+  font-weight: 500;
+}
+
+.Section_Six__Gift {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.Divide {
+  margin-bottom: 0.8rem;
+}
+.Divide::before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 1px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+@media screen and (max-height: 1023px) {
+  .Section_Six__content {
+    padding: 2rem;
+    margin-top: 1rem;
+    row-gap: 0.5rem;
+  }
+  .Section_Six__Gift {
+    gap: 0.1rem;
+  }
+  .Divide {
+    margin-bottom: 0;
+  }
+  .Divide::before {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Section_Six {
+    background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Tablet.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .Section_Six__bank p:first-child {
+    font-size: 24px;
+  }
+  .Section_Six__bank p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .Section_Six__Gift {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Section_Six {
+    background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Desktop.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}

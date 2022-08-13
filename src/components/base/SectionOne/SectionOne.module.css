@@ -1,0 +1,236 @@
+.section_one {
+  height: 100%;
+  overflow: hidden;
+  /* transition: 60s; */
+  animation: bg_change_mobile 8s infinite ease-in-out;
+  color: #fff;
+  position: relative;
+}
+
+.section_one__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+.section_one__content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.section_one__content .logo {
+  margin-bottom: 16px;
+}
+
+.section_one__content_title {
+  text-align: center;
+}
+
+.section_one__content_title h2 {
+  font-family: "Alex Brush", sans-serif;
+  /* font-size: 50px; */
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.section_one__content_title p {
+  /* font-size: 25px; */
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.section_one__content_text p {
+  /* font-size: 20px; */
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.section_one__content_time {
+  display: flex;
+  gap: 1.5rem;
+  /* gap: 3.5rem; */
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+@keyframes bg_change_mobile {
+  0% {
+    background: url("/public/assets/img/WeddingWebsite/1.1/img1/Background-1.1-Mobile1.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  40% {
+    background: url("/public/assets/img/WeddingWebsite/1.1/img2/Background-1.1-Mobile2.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  80% {
+    background: url("/public/assets/img/WeddingWebsite/1.1/img3/Background-1.1-Mobile3.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  100% {
+    background: url("/public/assets/img/WeddingWebsite/1.1/img1/Background-1.1-Mobile1.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+/* RWD for width > 728 and height 1024 */
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .section_one__content .logo {
+    margin-bottom: 60px;
+  }
+
+  .section_one__content_title h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .section_one__content_title p {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .section_one__content_text p {
+    font-size: 20px;
+    padding: 0 48px;
+  }
+
+  .section_one__content-time {
+    margin: 50px 0 24px;
+  }
+  .section_one {
+    animation: bg_change_tablet 8s infinite ease-in-out;
+  }
+
+  /* animate keyframes */
+  @keyframes bg_change_tablet {
+    0% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img1/Background-1.1-Tablet.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    40% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img2/Background-1.1-tablet2.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    80% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img3/Background-1.1-Tablet3.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    100% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img1/Background-1.1-Tablet.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-height: 1023px) {
+  .section_one__content_text p {
+    width: 70%;
+  }
+}
+
+/* Responsive web design for width > 1024 and height > 1024 */
+@media screen and (min-width: 1024px) and (min-height: 1024px) {
+  .section_one__content .logo {
+    margin-bottom: 76px;
+  }
+  .section_one__shadow {
+    display: block;
+  }
+
+  .section_one__content_text p {
+    padding: 0;
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .section_one__content-time {
+    margin: 50px 0 24px;
+  }
+  .section_one {
+    animation: bg_change_desktop 8s infinite ease-in-out;
+  }
+
+  /* animate keyframes */
+  @keyframes bg_change_desktop {
+    0% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img1/Background-1.1-Desktop.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    40% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img2/Background-1.1-Desktop2.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    80% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img3/Background-1.1-Desktop3.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    100% {
+      background: url("/public/assets/img/WeddingWebsite/1.1/img1/Background-1.1-Desktop.png")
+        no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1023px) {
+  .section_one__content_text p {
+    padding: 0;
+    width: 50%;
+    font-size: 20px;
+  }
+}
