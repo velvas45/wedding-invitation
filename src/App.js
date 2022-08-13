@@ -9,7 +9,6 @@ import SectionFive from "./components/base/SectionFive/SectionFive";
 import SectionSix from "./components/base/SectionSix/SectionSix";
 import SectionSeven from "./components/base/SectionSeven/SectionSeven";
 import Modal from "./components/Modal/Modal";
-import { useSearchParams } from "react-router-dom";
 
 function App() {
   const [visibleModal, setVisibleModal] = useState(true);
