@@ -132,7 +132,7 @@
 
 @media screen and (min-height: 700px) {
   .Section_Four__Card {
-    height: 500px;
+    height: 520px;
     bottom: 5%;
   }
   .Section_Four__InnerCard {
@@ -140,6 +140,10 @@
   }
   .Section_Four__CardTitle {
     margin-bottom: 0;
+  }
+
+  .Section_Four__CardContent {
+    margin-top: 2rem;
   }
 
   .Section_Four__CardContentAkad {
@@ -206,7 +210,7 @@
 
 @media screen and (min-width: 768px) and (max-height: 1023px) {
   .Section_Four__Card {
-    height: 400px;
+    height: 450px;
     bottom: 1%;
   }
 

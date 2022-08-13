@@ -23,3 +23,18 @@
 .container::-webkit-scrollbar {
   display: none;
 }
+
+.video-player {
+  height: 250px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .video-player {
+    height: 280px !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .video-player {
+    height: 350px !important;
+  }
+}

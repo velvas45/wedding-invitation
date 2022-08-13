@@ -6,6 +6,7 @@ import styles from "./SectionFive.module.css";
 import { useAudio } from "../../../hooks/useAudio";
 import ReactPlayer from "react-player/lazy";
 import Gallery from "../../Gallery/Gallery";
+import Video from "../../../assets/video/prewedding.mp4";
 
 import { img_gallery_data } from "../../../data/image";
 
@@ -22,7 +23,8 @@ function SectionFive() {
       <div className={styles.Section_Five__mainContent}>
         <div className={styles.Section_Five__video}>
           <ReactPlayer
-            url="https://youtu.be/XjCxkMKhEig"
+            className="video-player"
+            url={Video}
             onPlay={() => toggle(false)}
             onPause={() => toggle(true)}
             onEnded={() => toggle(true)}
