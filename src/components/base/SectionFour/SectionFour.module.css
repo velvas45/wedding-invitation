@@ -98,7 +98,7 @@
 
 @media screen and (min-height: 634px) {
   .Section_Four__Card {
-    height: 420px;
+    height: 460px;
     bottom: 2%;
   }
   .Section_Four__InnerCard {
@@ -132,7 +132,7 @@
 
 @media screen and (min-height: 700px) {
   .Section_Four__Card {
-    height: 520px;
+    height: 490px;
     bottom: 5%;
   }
   .Section_Four__InnerCard {
@@ -168,9 +168,26 @@
   }
 }
 
+@media screen and (min-height: 900px) {
+  .Section_Four__Card {
+    height: 660px;
+    bottom: 5%;
+  }
+
+  .Section_Four__CardContentAkad {
+    width: 60%;
+  }
+  .Section_Four__CardContent {
+    margin-top: 6rem;
+  }
+  .Section_Four__CardBtn {
+    margin-top: 5rem;
+  }
+}
+
 @media screen and (min-width: 768px) and (min-height: 1024px) {
   .Section_Four__Card {
-    height: 696px;
+    height: 850px;
   }
   .Section_Four__InnerCard {
     background: url("/public/assets/img/WeddingWebsite/1.4/img/Img1.4/2.png")
@@ -210,7 +227,7 @@
 
 @media screen and (min-width: 768px) and (max-height: 1023px) {
   .Section_Four__Card {
-    height: 450px;
+    height: 600px;
     bottom: 1%;
   }
 
@@ -219,7 +236,7 @@
   }
 
   .Section_Four__CardBtn {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 

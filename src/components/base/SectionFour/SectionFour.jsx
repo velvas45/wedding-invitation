@@ -8,7 +8,14 @@ import { handleClickSaveCalendar } from "../../../lib/calendar_api";
 function SectionFour() {
   return (
     <section className={styles.Section_Four}>
-      <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
+      <img
+        src={Logo}
+        className="logo_wedding"
+        alt="Logo"
+        width={150}
+        height={150}
+        loading="lazy"
+      />
       <div className={styles.Section_Four__Card}>
         <div className={styles.Section_Four__InnerCard}>
           <div className={styles.Section_Four__CardTitle}>

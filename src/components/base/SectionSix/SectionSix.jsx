@@ -22,7 +22,14 @@ export default function SectionSix() {
   return (
     <>
       <section className={styles.Section_Six}>
-        <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
+        <img
+          src={Logo}
+          className="logo_wedding"
+          alt="Logo"
+          width={150}
+          height={150}
+          loading="lazy"
+        />
 
         <div className={styles.Section_Six__content}>
           <div className={styles.Section_Six__bank}>

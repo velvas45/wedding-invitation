@@ -15,7 +15,14 @@ function SectionFive() {
 
   return (
     <section className={styles.Section_Five}>
-      <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
+      <img
+        src={Logo}
+        className="logo_wedding"
+        alt="Logo"
+        width={150}
+        height={150}
+        loading="lazy"
+      />
 
       <h3 className={styles.Section_Five__title} data-text="Our Gallery">
         Our Gallery

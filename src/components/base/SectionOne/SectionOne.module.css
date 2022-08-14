@@ -26,6 +26,8 @@
 
 .section_one__content .logo {
   margin-bottom: 16px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 .section_one__content_title {
@@ -102,6 +104,8 @@
 @media screen and (min-width: 768px) and (min-height: 1024px) {
   .section_one__content .logo {
     margin-bottom: 60px;
+    max-width: 150px;
+    max-height: 150px;
   }
 
   .section_one__content_title h2 {
@@ -165,6 +169,11 @@
 @media screen and (min-width: 768px) and (max-height: 1023px) {
   .section_one__content_text p {
     width: 70%;
+  }
+
+  .section_one__content .logo {
+    max-width: 150px;
+    max-height: 150px;
   }
 }
 

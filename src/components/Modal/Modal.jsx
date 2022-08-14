@@ -13,7 +13,14 @@ const Modal = ({ btnClick, isVisible, invitationTitle }) => {
       className={styles.Modal}
     >
       <div className={styles.Modal}>
-        <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
+        <img
+          src={Logo}
+          className="logo_wedding"
+          alt="Logo"
+          width={150}
+          height={150}
+          loading="lazy"
+        />
         <div className={styles.Modal__title}>
           <p>Anggie</p>
           <p> & </p>

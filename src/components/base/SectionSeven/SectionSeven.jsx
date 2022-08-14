@@ -5,7 +5,14 @@ import styles from "./SectionSeven.module.css";
 function SectionSeven() {
   return (
     <section className={styles.Section_Seven}>
-      <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
+      <img
+        src={Logo}
+        className="logo_wedding"
+        alt="Logo"
+        width={150}
+        height={150}
+        loading="lazy"
+      />
       <div className={styles.Section_Seven__content}>
         <h3>Terima Kasih</h3>
         <p>

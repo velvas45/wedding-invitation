@@ -28,6 +28,18 @@
   height: 250px !important;
 }
 
+.logo_wedding {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo_wedding {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .video-player {
     height: 280px !important;

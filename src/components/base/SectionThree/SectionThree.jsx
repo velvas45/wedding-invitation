@@ -7,7 +7,14 @@ import styles from "./SectionThree.module.css";
 function SectionThree() {
   return (
     <section className={styles.section_three}>
-      <img src={Logo} alt="Logo" width={150} height={150} loading="lazy" />
+      <img
+        src={Logo}
+        className="logo_wedding"
+        alt="Logo"
+        width={150}
+        height={150}
+        loading="lazy"
+      />
       <div className={styles.section_three__content}>
         <p className={styles.section_three__content_title}>The Groom</p>
         <CardDescription
