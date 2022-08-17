@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import Loader from "../../Loader/Loader";
 
 import { client, comment_query_list } from "../../../lib/sanity/client";
+import { getDateNow } from "../../../lib/utils/getDateNow";
 
 const SectionSeven = () => {
   const [formData, setFormData] = useState({
@@ -22,23 +23,25 @@ const SectionSeven = () => {
   const addForm = async () => {
     try {
       setLoading(true);
+      const dateNow = new Date();
       if (formData.name && formData.message) {
+        setFormData({
+          name: "",
+          message: "",
+        });
         const payload = {
           _type: "comment",
           name: formData.name,
           message: formData.message,
+          created_at: getDateNow(dateNow),
         };
         await client.create(payload);
 
-        toast("Doa kamu tersimpan, terima kasih.", {
+        toast("your prayers are saved, thank you.", {
           toastId: "update-prayer",
           position: "top-right",
           autoClose: 2000,
           closeOnClick: true,
-        });
-        setFormData({
-          name: "",
-          message: "",
         });
 
         const comment_data = await client.fetch(comment_query_list);
@@ -48,7 +51,7 @@ const SectionSeven = () => {
         setLoading(false);
       }
     } catch (error) {
-      toast("Terjadi Kesalahan", {
+      toast("Failed to save the messages, try again.", {
         type: "error",
         toastId: "update-prayer",
         position: "top-right",
@@ -95,7 +98,7 @@ const SectionSeven = () => {
 
         <form>
           <div className={styles.Form_Control}>
-            <label htmlFor="name">Nama</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -105,7 +108,7 @@ const SectionSeven = () => {
             />
           </div>
           <div className={styles.Form_Control}>
-            <label htmlFor="message">Pesan</label>
+            <label htmlFor="message">Message</label>
             <textarea
               type="text"
               id="message"
@@ -117,7 +120,7 @@ const SectionSeven = () => {
           <Button
             style={{ width: "100px", marginTop: "1rem", height: "30px" }}
             type="primary"
-            title="KIRIM"
+            title="SEND"
             onClick={() => addForm()}
           />
         </form>

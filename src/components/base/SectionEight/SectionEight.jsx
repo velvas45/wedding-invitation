@@ -14,7 +14,7 @@ function SectionEight() {
         loading="lazy"
       />
       <div className={styles.Section_Eight__content}>
-        <h3>Terima Kasih</h3>
+        <h3>Thank you</h3>
         <p>
           Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila
           Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do’a restu kepada

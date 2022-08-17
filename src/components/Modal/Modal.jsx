@@ -37,7 +37,7 @@ const Modal = ({ btnClick, isVisible, invitationTitle }) => {
             className={styles.Modal__button}
           >
             <img src={InvitationIcon} alt="invitation" />{" "}
-            <span>Buka Undangan</span>
+            <span>Open Invitation</span>
           </button>
         </div>
       </div>

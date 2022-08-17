@@ -12,7 +12,7 @@ export default function SectionSix() {
     copyTextToClipboard(text)
       .then(() => {
         // If successful, update the isCopied state value
-        toast("Nomor Rekening Berhasil Tersalin!", {
+        toast("Account Number Copied Successfully!", {
           toastId: "copy-norek",
           position: "bottom-center",
           autoClose: 1500,
@@ -20,7 +20,13 @@ export default function SectionSix() {
         });
       })
       .catch((err) => {
-        console.log(err);
+        toast("Failed to copy account number", {
+          toastId: "copy-norek",
+          type: "error",
+          position: "bottom-center",
+          autoClose: 1500,
+          closeOnClick: true,
+        });
       });
   };
 
@@ -39,12 +45,12 @@ export default function SectionSix() {
         <div className={styles.Section_Six__content}>
           <div className={styles.Section_Six__bank}>
             <p>Mandiri - Anggie Febi Yaditha</p>
-            <p>133123456789</p>
+            <p>1330015415227</p>
             <Button
               type="secondary"
-              title="Salin"
+              title="Copy"
               style={{ width: "120px" }}
-              onClick={() => onCopyText("133123456789")}
+              onClick={() => onCopyText("1330015415227")}
             />
           </div>
           <div className={styles.Divide}></div>
@@ -53,7 +59,7 @@ export default function SectionSix() {
             <p>8410649099</p>
             <Button
               type="secondary"
-              title="Salin"
+              title="Copy"
               style={{ width: "120px" }}
               onClick={() => onCopyText("8410649099")}
             />

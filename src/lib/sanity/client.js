@@ -9,4 +9,4 @@ export const client = sanityClient({
   token,
 });
 
-export const comment_query_list = `*[_type == 'comment']`;
+export const comment_query_list = `*[_type == 'comment'] | order(_createdAt)`;
