@@ -18,9 +18,11 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 700px;
+  min-height: 500px;
+  max-height: 700px;
   width: 95%;
   padding: 30px;
+  margin-top: 1.5rem;
   overflow-y: auto;
 }
 
