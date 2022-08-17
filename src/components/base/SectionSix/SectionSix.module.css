@@ -8,7 +8,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .Section_Six__content {
