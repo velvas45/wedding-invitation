@@ -3,7 +3,7 @@ import Logo from "../../../assets/img/logo_wedding.png";
 import Poster from "../../../assets/img/poster_video.png";
 import styles from "./SectionFive.module.css";
 
-import { useAudio } from "../../../hooks/useAudio";
+import { useStateAudioContext } from "../../../context/soundContext";
 import ReactPlayer from "react-player/lazy";
 import Gallery from "../../Gallery/Gallery";
 import Video from "../../../assets/video/prewedding.mp4";
@@ -11,7 +11,7 @@ import Video from "../../../assets/video/prewedding.mp4";
 import { img_gallery_data } from "../../../data/image";
 
 function SectionFive() {
-  const [playing, toggle] = useAudio();
+  const { toggleAudio } = useStateAudioContext();
 
   return (
     <section className={styles.Section_Five}>
@@ -32,9 +32,9 @@ function SectionFive() {
           <ReactPlayer
             className="video-player"
             url={Video}
-            onPlay={() => toggle(false)}
-            onPause={() => toggle(true)}
-            onEnded={() => toggle(true)}
+            onPlay={() => toggleAudio(false)}
+            onPause={() => toggleAudio(true)}
+            onEnded={() => toggleAudio(true)}
             controls={true}
             light={Poster}
             width="100%"

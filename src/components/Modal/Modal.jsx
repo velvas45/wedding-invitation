@@ -8,7 +8,7 @@ const Modal = ({ btnClick, isVisible, invitationTitle }) => {
   return (
     <Animated
       animationIn="fadeIn"
-      animationOut="bounceOutRight"
+      animationOut="fadeOut"
       isVisible={isVisible}
       className={styles.Modal}
     >

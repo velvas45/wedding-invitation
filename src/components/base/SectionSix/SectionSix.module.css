@@ -1,5 +1,5 @@
 .Section_Six {
-  background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Mobile.png")
+  background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Mobile.jpg")
     no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,6 +8,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  background-attachment: fixed;
 }
 
 .Section_Six__content {
@@ -115,7 +116,7 @@
 
 @media screen and (min-width: 768px) {
   .Section_Six {
-    background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Tablet.png")
+    background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Tablet.jpg")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -136,7 +137,7 @@
 }
 @media screen and (min-width: 1024px) {
   .Section_Six {
-    background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Desktop.png")
+    background: url("/public/assets/img/WeddingWebsite/1.6/Background-1.6-Desktop.jpg")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

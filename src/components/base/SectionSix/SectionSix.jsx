@@ -3,7 +3,7 @@ import styles from "./SectionSix.module.css";
 import Logo from "../../../assets/img/logo_wedding.png";
 import Button from "../../Button/Button";
 
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 import { copyTextToClipboard } from "../../../lib/utils/copyToClipboard";
 
@@ -12,7 +12,12 @@ export default function SectionSix() {
     copyTextToClipboard(text)
       .then(() => {
         // If successful, update the isCopied state value
-        toast("Nomor Rekening Berhasil Tersalin!");
+        toast("Nomor Rekening Berhasil Tersalin!", {
+          toastId: "copy-norek",
+          position: "bottom-center",
+          autoClose: 1500,
+          closeOnClick: true,
+        });
       })
       .catch((err) => {
         console.log(err);
@@ -64,17 +69,6 @@ export default function SectionSix() {
           </div>
         </div>
       </section>
-      <ToastContainer
-        position="bottom-center"
-        autoClose={1500}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </>
   );
 }

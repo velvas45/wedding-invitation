@@ -1,0 +1,103 @@
+.Section_Eight {
+  background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.7-Mobile.jpg")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.Section_Eight__content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: center;
+  color: #fff;
+}
+
+.Section_Eight__content h3 {
+  font-size: 18px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+}
+
+.Section_Eight__content p {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  /* width: 90%; */
+}
+
+.Section_Eight__copyright {
+  position: absolute;
+  bottom: 6%;
+  color: #fff;
+}
+
+.Couple {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Alex Brush", sans-serif;
+  margin-top: 1rem;
+}
+
+.Section_Eight__copyright h2 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Section_Eight__copyright p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .Section_Eight {
+    background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.7-Tablet.jpg")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .Section_Eight__content {
+    row-gap: 2rem;
+  }
+
+  .Section_Eight__content h3 {
+    font-size: 24px;
+  }
+  .Section_Eight__content p {
+    font-size: 20px;
+    width: 80%;
+  }
+  .Couple {
+    font-size: 40px;
+  }
+
+  .Section_Eight__copyright h2 {
+    font-size: 20px;
+  }
+
+  .Section_Eight__copyright p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Section_Eight {
+    background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.7-Desktop.jpg")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
