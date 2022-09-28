@@ -4,7 +4,13 @@ import InvitationIcon from "../../assets/img/invitation_icon.svg";
 import styles from "./Modal.module.css";
 import { Animated } from "react-animated-css";
 
-const Modal = ({ btnClick, isVisible, invitationTitle }) => {
+const Modal = ({
+  btnClick,
+  isVisible,
+  invitationTitle,
+  buttonDisabled,
+  loadingFetch,
+}) => {
   return (
     <Animated
       animationIn="fadeIn"
@@ -29,16 +35,24 @@ const Modal = ({ btnClick, isVisible, invitationTitle }) => {
         <span className={styles.Date}>12.11.22</span>
 
         <div className={styles.Modal__footer}>
-          <p data-text={`Dear: ${invitationTitle}`}>Dear: {invitationTitle}</p>
-
-          <button
-            type="button"
-            onClick={btnClick}
-            className={styles.Modal__button}
-          >
-            <img src={InvitationIcon} alt="invitation" />{" "}
-            <span>Open Invitation</span>
-          </button>
+          {loadingFetch ? (
+            <p>Loading ...</p>
+          ) : (
+            <>
+              {invitationTitle && (
+                <p data-text={`${invitationTitle}`}>{invitationTitle}</p>
+              )}
+              <button
+                type="button"
+                onClick={btnClick}
+                className={styles.Modal__button}
+                disabled={buttonDisabled}
+              >
+                <img src={InvitationIcon} alt="invitation" />{" "}
+                <span>Open Invitation</span>
+              </button>
+            </>
+          )}
         </div>
       </div>
     </Animated>

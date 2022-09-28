@@ -10,3 +10,4 @@ export const client = sanityClient({
 });
 
 export const comment_query_list = `*[_type == 'comment'] | order(_createdAt)`;
+export const list_invitation_query = `*[_type == 'list_invitation']`;

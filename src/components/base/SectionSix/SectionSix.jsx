@@ -44,7 +44,7 @@ export default function SectionSix() {
 
         <div className={styles.Section_Six__content}>
           <div className={styles.Section_Six__bank}>
-            <p>Mandiri - Anggie Febi Yaditha</p>
+            <p>MANDIRI - Anggie Febi Yaditha</p>
             <p>1330015415227</p>
             <Button
               type="secondary"
@@ -55,7 +55,7 @@ export default function SectionSix() {
           </div>
           <div className={styles.Divide}></div>
           <div className={styles.Section_Six__bank}>
-            <p>Bca - Anggie Febi Yaditha</p>
+            <p>BCA - Anggie Febi Yaditha</p>
             <p>8410649099</p>
             <Button
               type="secondary"
