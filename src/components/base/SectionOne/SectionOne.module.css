@@ -67,7 +67,7 @@
 
 @keyframes bg_change_mobile {
   0% {
-    background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Mobile1.jpg")
+    background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Mobile1.webp")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -75,7 +75,7 @@
     background-size: cover;
   }
   40% {
-    background: url("/public/assets/img/WeddingWebsite/1.1/2/Background-1.1-Mobile2.jpg")
+    background: url("/public/assets/img/WeddingWebsite/1.1/2/Background-1.1-Mobile2.webp")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -83,7 +83,7 @@
     background-size: cover;
   }
   80% {
-    background: url("/public/assets/img/WeddingWebsite/1.1/3/Background-1.1-Mobile3.jpg")
+    background: url("/public/assets/img/WeddingWebsite/1.1/3/Background-1.1-Mobile3.webp")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -91,7 +91,7 @@
     background-size: cover;
   }
   100% {
-    background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Mobile1.jpg")
+    background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Mobile1.webp")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -107,7 +107,7 @@
   /* animate keyframes */
   @keyframes bg_change_tablet {
     0% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Tablet.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Tablet.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -115,7 +115,7 @@
       background-size: cover;
     }
     40% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/2/Background-1.1-tablet2.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/2/Background-1.1-tablet2.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -123,7 +123,7 @@
       background-size: cover;
     }
     80% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/3/Background-1.1-Tablet3.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/3/Background-1.1-Tablet3.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -131,7 +131,7 @@
       background-size: cover;
     }
     100% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Tablet.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Tablet.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -187,7 +187,7 @@
   /* animate keyframes */
   @keyframes bg_change_desktop {
     0% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Desktop.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Desktop.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -195,7 +195,7 @@
       background-size: cover;
     }
     40% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/2/Background-1.1-Desktop2.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/2/Background-1.1-Desktop2.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -203,7 +203,7 @@
       background-size: cover;
     }
     80% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/3/Background-1.1-Desktop3.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/3/Background-1.1-Desktop3.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -211,7 +211,7 @@
       background-size: cover;
     }
     100% {
-      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Desktop.jpg")
+      background: url("/public/assets/img/WeddingWebsite/1.1/1/Background-1.1-Desktop.webp")
         no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;

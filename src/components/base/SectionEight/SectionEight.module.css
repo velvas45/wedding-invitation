@@ -1,5 +1,5 @@
 .Section_Eight {
-  background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.7-Mobile.jpg")
+  background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.8-Mobile.webp")
     no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 768px) {
   .Section_Eight {
-    background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.7-Tablet.jpg")
+    background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.8-Tablet.webp")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 1024px) {
   .Section_Eight {
-    background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.7-Desktop.jpg")
+    background: url("/public/assets/img/WeddingWebsite/1.8/Background-1.8-Desktop.webp")
       no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
