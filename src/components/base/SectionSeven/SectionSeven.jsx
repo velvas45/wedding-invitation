@@ -139,7 +139,11 @@ const SectionSeven = () => {
         </form>
 
         {/* comment list */}
-        {loading ? <Loader /> : <CommentList comments={comments} />}
+        {loading || !comments ? (
+          <Loader />
+        ) : (
+          <CommentList comments={comments} />
+        )}
       </div>
     </section>
   );
