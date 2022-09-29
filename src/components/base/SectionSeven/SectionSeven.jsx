@@ -4,13 +4,28 @@ import Logo from "../../../assets/img/logo_wedding.png";
 import Button from "../../Button/Button";
 import CommentList from "../../CommentList/CommentList";
 import { toast } from "react-toastify";
+import { useSWRConfig } from "swr";
+
+import useFetch from "../../../hooks/useFetch";
 
 import Loader from "../../Loader/Loader";
 
-import { client, comment_query_list } from "../../../lib/sanity/client";
+import {
+  client,
+  comment_query_list_with_groq,
+} from "../../../lib/sanity/client";
 import { getDateNow } from "../../../lib/utils/getDateNow";
 
 const SectionSeven = () => {
+  const { mutate } = useSWRConfig();
+  const { data: comments, isLoading } = useFetch(
+    comment_query_list_with_groq,
+    (query) => client.fetch(query),
+    {
+      revalidateOnFocus: true,
+    }
+  );
+
   const [formData, setFormData] = useState({
     name: "",
     message: "",
@@ -18,7 +33,7 @@ const SectionSeven = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [comments, setComments] = useState([]);
+  // const [comments, setComments] = useState([]);
 
   const addForm = async () => {
     try {
@@ -44,9 +59,7 @@ const SectionSeven = () => {
           closeOnClick: true,
         });
 
-        const comment_data = await client.fetch(comment_query_list);
-
-        setComments(comment_data);
+        await mutate(comment_query_list_with_groq);
 
         setLoading(false);
       }
@@ -72,13 +85,13 @@ const SectionSeven = () => {
     });
   };
 
-  useEffect(() => {
-    setLoading(true);
-    client.fetch(comment_query_list).then((data) => {
-      setComments(data);
-      setLoading(false);
-    });
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   // client.fetch(comment_query_list).then((data) => {
+  //   //   setComments(data);
+  //   //   setLoading(false);
+  //   // });
+  // }, []);
 
   return (
     <section className={styles.Section_Seven}>
@@ -126,7 +139,11 @@ const SectionSeven = () => {
         </form>
 
         {/* comment list */}
-        {loading ? <Loader /> : <CommentList comments={comments} />}
+        {loading || isLoading ? (
+          <Loader />
+        ) : (
+          <CommentList comments={comments} />
+        )}
       </div>
     </section>
   );
