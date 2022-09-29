@@ -4,7 +4,7 @@ import Logo from "../../../assets/img/logo_wedding.png";
 import Button from "../../Button/Button";
 import CommentList from "../../CommentList/CommentList";
 import { toast } from "react-toastify";
-import { useSWRConfig } from "swr";
+import useSWR, { useSWRConfig } from "swr";
 
 import useFetch from "../../../hooks/useFetch";
 
@@ -18,7 +18,7 @@ import { getDateNow } from "../../../lib/utils/getDateNow";
 
 const SectionSeven = () => {
   const { mutate } = useSWRConfig();
-  const { data: comments, isLoading } = useFetch(
+  const { data: comments } = useSWR(
     comment_query_list_with_groq,
     (query) => client.fetch(query),
     {
@@ -64,7 +64,7 @@ const SectionSeven = () => {
 
         await mutate(comment_query_list_with_groq);
       } else {
-        toast("Failed to save the messages, try again.", {
+        toast("Please input name and fill the message.", {
           type: "error",
           toastId: "update-prayer",
           position: "top-right",
@@ -149,11 +149,7 @@ const SectionSeven = () => {
         </form>
 
         {/* comment list */}
-        {loading || isLoading ? (
-          <Loader />
-        ) : (
-          <CommentList comments={comments} />
-        )}
+        {loading ? <Loader /> : <CommentList comments={comments} />}
       </div>
     </section>
   );
