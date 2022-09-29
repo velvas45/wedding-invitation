@@ -23,7 +23,7 @@ const SectionSeven = () => {
     (query) => client.fetch(query),
     {
       revalidateOnFocus: true,
-      refreshInterval: 4000,
+      refreshInterval: 5000,
     }
   );
 
