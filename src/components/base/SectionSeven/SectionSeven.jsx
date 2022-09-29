@@ -24,6 +24,8 @@ const SectionSeven = () => {
     {
       revalidateOnFocus: true,
       refreshInterval: 5000,
+      dedupingInterval: 5000,
+      focusThrottleInterval: 5000,
     }
   );
 
