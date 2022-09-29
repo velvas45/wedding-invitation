@@ -41,10 +41,6 @@ const SectionSeven = () => {
       setLoading(true);
       const dateNow = new Date();
       if (formData.name && formData.message) {
-        setFormData({
-          name: undefined,
-          message: undefined,
-        });
         const payload = {
           _type: "comment",
           name: formData.name,
@@ -62,8 +58,8 @@ const SectionSeven = () => {
 
         await mutate(comment_query_list_with_groq);
         setFormData({
-          name: "",
-          message: "",
+          name: undefined,
+          message: undefined,
         });
       } else {
         toast("Please input name and fill the message.", {
