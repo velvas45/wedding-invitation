@@ -63,9 +63,16 @@ const SectionSeven = () => {
         });
 
         await mutate(comment_query_list_with_groq);
-
-        setLoading(false);
+      } else {
+        toast("Failed to save the messages, try again.", {
+          type: "error",
+          toastId: "update-prayer",
+          position: "top-right",
+          autoClose: 2000,
+          closeOnClick: true,
+        });
       }
+      setLoading(false);
     } catch (error) {
       toast("Failed to save the messages, try again.", {
         type: "error",
