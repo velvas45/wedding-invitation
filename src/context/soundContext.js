@@ -4,7 +4,7 @@ import urlSong from "../assets/audio/song_one.mp3";
 const Context = createContext();
 
 export const StateAudioContext = ({ children }) => {
-  const [audio] = useState(new Audio(urlSong));
+  const [audio, setAudio] = useState(new Audio(urlSong));
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(false);
 
