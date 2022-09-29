@@ -38,9 +38,9 @@ const SectionSeven = () => {
 
   const addForm = async () => {
     try {
-      setLoading(true);
       const dateNow = new Date();
       if (formData.name && formData.message) {
+        setLoading(true);
         const payload = {
           _type: "comment",
           name: formData.name,
@@ -61,6 +61,7 @@ const SectionSeven = () => {
           name: undefined,
           message: undefined,
         });
+        setLoading(false);
       } else {
         toast("Please input name and fill the message.", {
           type: "error",
@@ -70,7 +71,6 @@ const SectionSeven = () => {
           closeOnClick: true,
         });
       }
-      setLoading(false);
     } catch (error) {
       toast("Failed to save the messages, try again.", {
         type: "error",
