@@ -28,8 +28,8 @@ const SectionSeven = () => {
   );
 
   const [formData, setFormData] = useState({
-    name: "",
-    message: "",
+    name: undefined,
+    message: undefined,
   });
 
   const [loading, setLoading] = useState(false);
@@ -42,8 +42,8 @@ const SectionSeven = () => {
       const dateNow = new Date();
       if (formData.name && formData.message) {
         setFormData({
-          name: "",
-          message: "",
+          name: undefined,
+          message: undefined,
         });
         const payload = {
           _type: "comment",
