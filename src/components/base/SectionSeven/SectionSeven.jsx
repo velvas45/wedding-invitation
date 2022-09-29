@@ -4,7 +4,7 @@ import Logo from "../../../assets/img/logo_wedding.png";
 import Button from "../../Button/Button";
 import CommentList from "../../CommentList/CommentList";
 import { toast } from "react-toastify";
-import useSWR, { useSWRConfig } from "swr";
+import { useSWRConfig } from "swr";
 
 import useFetch from "../../../hooks/useFetch";
 
@@ -18,14 +18,12 @@ import { getDateNow } from "../../../lib/utils/getDateNow";
 
 const SectionSeven = () => {
   const { mutate } = useSWRConfig();
-  const { data: comments } = useSWR(
+  const { data: comments } = useFetch(
     comment_query_list_with_groq,
     (query) => client.fetch(query),
     {
       revalidateOnFocus: true,
-      refreshInterval: 5000,
-      dedupingInterval: 5000,
-      focusThrottleInterval: 5000,
+      refreshInterval: 1000,
     }
   );
 
@@ -63,6 +61,10 @@ const SectionSeven = () => {
         });
 
         await mutate(comment_query_list_with_groq);
+        setFormData({
+          name: "",
+          message: "",
+        });
       } else {
         toast("Please input name and fill the message.", {
           type: "error",
@@ -94,14 +96,6 @@ const SectionSeven = () => {
       [name]: value,
     });
   };
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   // client.fetch(comment_query_list).then((data) => {
-  //   //   setComments(data);
-  //   //   setLoading(false);
-  //   // });
-  // }, []);
 
   return (
     <section className={styles.Section_Seven}>
