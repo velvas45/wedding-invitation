@@ -46,9 +46,10 @@ function App() {
        */
       if (params.get("invitation_to")) {
         setButtonDisabled(false);
+        console.log(data);
         const existInvitation = data.find(
           (list) =>
-            list.slug.toLowerCase().trim() ===
+            list?.slug?.toLowerCase()?.trim() ===
             params.get("invitation_to").toLowerCase().trim()
         );
 
@@ -65,6 +66,7 @@ function App() {
 
       setLoadingFetchInvitation(false);
     } catch (error) {
+      console.log(error);
       toast("Network error, please refresh again.", {
         type: "error",
         toastId: "update-list-invitation",

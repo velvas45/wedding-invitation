@@ -70,7 +70,7 @@
 .Section_Four__CardContentResepsi p:first-child,
 .Section_Four__CardContentAkad p:nth-child(3),
 .Section_Four__CardContentResepsi p:nth-child(3) {
-  color: #6a6a6a;
+  color: #6d6d66;
   font-size: 14px;
   font-weight: 500;
 }
@@ -80,7 +80,7 @@
   font-weight: 700;
   font-size: 16px;
   color: #212121;
-  width: 73%;
+  width: 73% !important;
   margin: 4px 0;
 }
 
