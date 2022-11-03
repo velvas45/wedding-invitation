@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../../assets/img/logo_wedding.png";
 import Poster from "../../../assets/img/poster_video.png";
 import styles from "./SectionFive.module.css";
+import { motion } from "framer-motion";
 
 import { useStateAudioContext } from "../../../context/soundContext";
 import ReactPlayer from "react-player/lazy";
@@ -9,6 +10,7 @@ import Gallery from "../../Gallery/Gallery";
 import Video from "../../../assets/video/prewedding.mp4";
 
 import { img_gallery_data } from "../../../data/image";
+import { videoVariants } from "../../../variants";
 
 function SectionFive() {
   const { toggleAudio } = useStateAudioContext();
@@ -28,7 +30,12 @@ function SectionFive() {
         Our Gallery
       </h3>
       <div className={styles.Section_Five__mainContent}>
-        <div className={styles.Section_Five__video}>
+        <motion.div
+          variants={videoVariants}
+          initial="hidden"
+          whileInView="visible"
+          className={styles.Section_Five__video}
+        >
           <ReactPlayer
             className="video-player"
             url={Video}
@@ -39,7 +46,7 @@ function SectionFive() {
             light={Poster}
             width="100%"
           />
-        </div>
+        </motion.div>
 
         <Gallery galleryImages={img_gallery_data} />
       </div>

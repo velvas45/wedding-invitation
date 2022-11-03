@@ -1,6 +1,9 @@
 import React from "react";
 import Logo from "../../../assets/img/logo_wedding.png";
 import styles from "./SectionEight.module.css";
+import { motion } from "framer-motion";
+
+import { cardDescriptionVariants } from "../../../variants";
 
 function SectionEight() {
   return (
@@ -13,7 +16,12 @@ function SectionEight() {
         height={150}
         loading="lazy"
       />
-      <div className={styles.Section_Eight__content}>
+      <motion.div
+        variants={cardDescriptionVariants}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.Section_Eight__content}
+      >
         <h3>Thank you</h3>
         <p>
           Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila
@@ -21,11 +29,16 @@ function SectionEight() {
           Kami.
         </p>
         <span className={styles.Couple}>Anggie & Helmi</span>
-      </div>
-      <div className={styles.Section_Eight__copyright}>
+      </motion.div>
+      <motion.div
+        variants={cardDescriptionVariants}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.Section_Eight__copyright}
+      >
         <h2>CREATED BY</h2>
         <p>&copy; 2022 ANGGIE & HELMI</p>
-      </div>
+      </motion.div>
     </section>
   );
 }

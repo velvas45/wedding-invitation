@@ -46,7 +46,6 @@ function App() {
        */
       if (params.get("invitation_to")) {
         setButtonDisabled(false);
-        console.log(data);
         const existInvitation = data.find(
           (list) =>
             list?.slug?.toLowerCase()?.trim() ===

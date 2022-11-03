@@ -20,7 +20,7 @@ function CardDescription({
       </div>
 
       <a href={urlInstagram} target="_blank" rel="noreferrer">
-        <Button title="INSTAGRAM" />
+        <Button isAnimated title="INSTAGRAM" />
       </a>
     </div>
   );

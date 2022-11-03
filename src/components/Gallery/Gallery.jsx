@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,6 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./Gallery.css";
+
+import { galleryVariants } from "../../variants";
 
 const Gallery = ({ galleryImages }) => {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -77,7 +80,14 @@ const Gallery = ({ galleryImages }) => {
                 key={index}
                 onClick={() => handleOpenModal(index)}
               >
-                <img src={slide.img} alt="" />
+                <motion.img
+                  variants={galleryVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  custom={Math.random()}
+                  src={slide.img}
+                  alt=""
+                />
               </div>
             );
           })}

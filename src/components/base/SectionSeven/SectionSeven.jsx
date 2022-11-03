@@ -5,6 +5,9 @@ import Button from "../../Button/Button";
 import CommentList from "../../CommentList/CommentList";
 import { toast } from "react-toastify";
 import { useSWRConfig } from "swr";
+import { motion } from "framer-motion";
+
+import { cardDescriptionVariants } from "../../../variants";
 
 import useFetch from "../../../hooks/useFetch";
 
@@ -104,7 +107,12 @@ const SectionSeven = () => {
         loading="lazy"
       />
 
-      <div className={styles.Section_Seven__Card}>
+      <motion.div
+        variants={cardDescriptionVariants}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.Section_Seven__Card}
+      >
         <h3 className={styles.Section_Seven__Title}>
           SEND PRAYERS AND CONGRATULATIONS
         </h3>
@@ -134,6 +142,7 @@ const SectionSeven = () => {
             style={{ width: "100px", marginTop: "1rem", height: "30px" }}
             type="primary"
             title="SEND"
+            isAnimated
             onClick={() => addForm()}
           />
         </form>
@@ -144,7 +153,7 @@ const SectionSeven = () => {
         ) : (
           <CommentList comments={comments} />
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
