@@ -1,8 +1,10 @@
 import React from "react";
 import Logo from "../../../assets/img/logo_wedding.png";
 import CardDescription from "../../CardDescription/CardDescription";
+import { motion } from "framer-motion";
 
 import styles from "./SectionThree.module.css";
+import { cardDescriptionVariants } from "../../../variants";
 
 function SectionThree() {
   return (
@@ -15,7 +17,12 @@ function SectionThree() {
         height={150}
         loading="lazy"
       />
-      <div className={styles.section_three__content}>
+      <motion.div
+        variants={cardDescriptionVariants}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.section_three__content}
+      >
         <p className={styles.section_three__content_title}>The Groom</p>
         <CardDescription
           titleName="Helmi Agustiawan Dwi Putra Adi, S.Kom"
@@ -24,7 +31,7 @@ function SectionThree() {
           motherName="Rohmiati"
           urlInstagram="https://www.instagram.com/helmi_agustiawan/"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

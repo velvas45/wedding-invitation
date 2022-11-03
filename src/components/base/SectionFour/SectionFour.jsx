@@ -2,7 +2,9 @@ import React from "react";
 import Logo from "../../../assets/img/logo_wedding.png";
 import styles from "./SectionFour.module.css";
 import Button from "../../Button/Button";
+import { motion } from "framer-motion";
 
+import { sectionFourVariants } from "../../../variants";
 import { handleClickSaveCalendar } from "../../../lib/calendar_api";
 
 function SectionFour() {
@@ -16,7 +18,12 @@ function SectionFour() {
         height={150}
         loading="lazy"
       />
-      <div className={styles.Section_Four__Card}>
+      <motion.div
+        variants={sectionFourVariants}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.Section_Four__Card}
+      >
         <div className={styles.Section_Four__InnerCard}>
           <div className={styles.Section_Four__CardTitle}>
             <h3>Wedding</h3>
@@ -40,9 +47,10 @@ function SectionFour() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button title="GOOGLE MAPS" />
+                <Button isAnimated title="GOOGLE MAPS" />
               </a>
               <Button
+                isAnimated
                 title="SAVE"
                 type="primary"
                 onClick={handleClickSaveCalendar}
@@ -50,7 +58,7 @@ function SectionFour() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

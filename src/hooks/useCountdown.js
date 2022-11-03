@@ -37,6 +37,10 @@ const getReturnValues = (countDown) => {
       ? `0${Math.floor((countDown % (1000 * 60)) / 1000)}`
       : Math.floor((countDown % (1000 * 60)) / 1000);
 
+  if (days.includes("-")) {
+    return ["00", "00", "00", "00"];
+  }
+
   return [days, hours, minutes, seconds];
 };
 

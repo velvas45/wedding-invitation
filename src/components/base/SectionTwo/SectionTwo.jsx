@@ -1,7 +1,9 @@
 import React from "react";
 import Logo from "../../../assets/img/logo_wedding.png";
 import CardDescription from "../../CardDescription/CardDescription";
+import { motion } from "framer-motion";
 
+import { cardDescriptionVariants } from "../../../variants";
 import styles from "./SectionTwo.module.css";
 
 function SectionTwo() {
@@ -15,7 +17,12 @@ function SectionTwo() {
         height={150}
         loading="lazy"
       />
-      <div className={styles.section_two__content}>
+      <motion.div
+        variants={cardDescriptionVariants}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.section_two__content}
+      >
         <p className={styles.section_two__content_title}>The Bride</p>
         <CardDescription
           titleName="Anggie Febi Yaditha, S.Kom"
@@ -24,7 +31,7 @@ function SectionTwo() {
           motherName="Rita Sulastri"
           urlInstagram="https://www.instagram.com/Anggiefebiyy/"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

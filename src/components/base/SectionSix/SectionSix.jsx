@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./SectionSix.module.css";
 import Logo from "../../../assets/img/logo_wedding.png";
 import Button from "../../Button/Button";
+import { motion } from "framer-motion";
+
+import { cardDescriptionVariants } from "../../../variants";
 
 import { toast } from "react-toastify";
 
@@ -42,11 +45,17 @@ export default function SectionSix() {
           loading="lazy"
         />
 
-        <div className={styles.Section_Six__content}>
+        <motion.div
+          variants={cardDescriptionVariants}
+          initial="hidden"
+          whileInView="visible"
+          className={styles.Section_Six__content}
+        >
           <div className={styles.Section_Six__bank}>
             <p>MANDIRI - Anggie Febi Yaditha</p>
             <p>1330015415227</p>
             <Button
+              isAnimated
               type="secondary"
               title="Copy"
               style={{ width: "120px" }}
@@ -58,6 +67,7 @@ export default function SectionSix() {
             <p>BCA - Anggie Febi Yaditha</p>
             <p>8410649099</p>
             <Button
+              isAnimated
               type="secondary"
               title="Copy"
               style={{ width: "120px" }}
@@ -73,7 +83,7 @@ export default function SectionSix() {
               Bogor, 16157.
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
