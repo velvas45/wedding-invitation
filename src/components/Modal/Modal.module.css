@@ -65,8 +65,6 @@
   font-weight: 600;
   color: #3e3e3e;
   position: relative;
-  max-width: 300px;
-  text-align: center;
 }
 
 .Modal__footer p::before {
@@ -79,8 +77,6 @@
   border-right: 4px solid #fff;
   animation: textFill 8s linear infinite;
   filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
-  max-width: 265px;
-  text-align: center;
 }
 
 .Modal__button {
@@ -128,6 +124,16 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+
+  .Modal__footer p {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .Modal__footer p::before {
+    max-width: 280px;
+    text-align: center;
   }
 }
 
