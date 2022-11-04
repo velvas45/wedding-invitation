@@ -79,7 +79,7 @@
   border-right: 4px solid #fff;
   animation: textFill 8s linear infinite;
   filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
-  max-width: 280px;
+  max-width: 265px;
   text-align: center;
 }
 
