@@ -11,5 +11,5 @@ export const client = sanityClient({
 });
 
 export const comment_query_list = `*[_type == 'comment'] | order(_createdAt)`;
-export const comment_query_list_with_groq = groq`*[_type == 'comment']`;
+export const comment_query_list_with_groq = groq`*[_type == 'comment'] | order(_createdAt desc)`;
 export const list_invitation_query = `*[_type == 'list_invitation']`;
