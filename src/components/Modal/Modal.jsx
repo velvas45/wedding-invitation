@@ -39,8 +39,12 @@ const Modal = ({
             <p>Loading ...</p>
           ) : (
             <>
-              {invitationTitle && (
+              {invitationTitle ? (
                 <p data-text={`${invitationTitle}`}>{invitationTitle}</p>
+              ) : (
+                <p style={{ color: "#dc3545", fontWeight: "bold" }}>
+                  Mohon Maaf Kapasitas Sudah Maksimal
+                </p>
               )}
               <button
                 type="button"
